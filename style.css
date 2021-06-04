@@ -76,16 +76,16 @@ figure img {
   display: block;
 }
 
-@media only screen and (max-width: 800px) {
-  body {
-    padding: 1rem 15vw;
-  }
-  .donate img {
-    max-width: 50%;
-  }
-}
 @media only screen and (max-width: 1000px) {
   body {
     padding: 1rem 20vw;
+  }
+}
+@media only screen and (max-width: 800px) {
+  body {
+    padding: 1rem 10vw;
+  }
+  .donate img {
+    max-width: 50%;
   }
 }
