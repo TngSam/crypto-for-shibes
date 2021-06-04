@@ -1,0 +1,91 @@
+@keyframes jump {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-8px);
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  padding: 1rem 30vw;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+.swole-doge {
+  text-align: center;
+  cursor: n-resize;
+}
+.swole-doge img {
+  width: 169px;
+  animation: 0.42s linear 0s infinite alternate jump;
+  animation-play-state: paused;
+}
+.swole-doge img:hover {
+  animation-play-state: running;
+}
+h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+h2 {
+  margin-top: 2rem;
+}
+p {
+  margin: 1rem 0;
+  line-height: 1.75rem;
+}
+
+figure figcaption {
+  text-align: center;
+  font-size: 0.875rem;
+}
+figure img {
+  width: 100%;
+}
+
+.disclaimer {
+  border-bottom: 1px solid black;
+  padding-bottom: 4.2rem;
+}
+
+.donate {
+  line-height: 1.75rem;
+}
+.donate img {
+  max-width: 25%;
+  display: block;
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    padding: 1rem 15vw;
+  }
+  .donate img {
+    max-width: 50%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  body {
+    padding: 1rem 20vw;
+  }
+}
